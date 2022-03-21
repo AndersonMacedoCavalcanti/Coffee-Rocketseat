@@ -1,0 +1,136 @@
+body,main{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+:root {
+    --button: #8257E5;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 0;
+}
+
+header div {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div #img-burg,header div #logo2{
+    display: none;
+}
+
+header #btn-pegar-cafe-header{
+    background-color: transparent;
+    border: 2px solid #8257E5;
+    width: 172px;
+    height: 37px;
+    border-radius: 6px;
+
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+
+}
+
+
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+
+    margin-left: 25px;
+    margin-right: 25px;
+
+    color: white;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+main .container-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main .container-principal h1,h2{
+
+    color: white;
+    font-family: 'Manrope', sans-serif;
+
+    font-weight: 700;
+    line-height: 100px;
+    font-size: 80px;
+
+    margin: 0 0 0 0;
+    padding: 0;
+
+}
+
+main .container-principal h1{
+    margin: 50px 0 0 0;
+    letter-spacing: 0.01em;
+
+}
+
+
+main .container-principal h2{
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: black;
+    letter-spacing: 0.01em;
+
+}
+
+
+main .container-principal img{
+    width: 850px;
+}
+
+main #img-blur1, main #img-blur2{
+    position: absolute;
+}
+
+main #img-blur2{
+    right: 0;
+    top: 0;
+}
+
+main #img-blur1{
+    left: -200px;
+    top: 40vh;
+}
+
+@media (max-width: 1023px) {
+    header div button,header div nav{
+        display: none;
+    }
+
+    header div img:first-child{
+        display: none;
+    }
+
+    header div #img-burg, header div #logo2{
+        display: flex;
+    }
+
+    main .container-principal img{
+     width: 600px;
+    }
+
+}
+
+@media (max-width: 712px) {
+    main #img-blur1, main #img-blur2 {
+        display: none;
+    }
+
+}
